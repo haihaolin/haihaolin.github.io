@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haihao Lin (林海昊)</title>
-<meta name="description" content="Haihao Lin (林海昊) — UCAS M.S. student working on VLA post-training, representation stability, and real-robot learning; first and corresponding author of FiberTune.">
+<meta name="description" content="Haihao Lin (林海昊), UCAS master's student. Research interests: multimodal representation learning and reasoning, continual learning and adaptation, world modeling and embodied intelligence. First and corresponding author of FiberTune, accepted at CoRL 2026.">
 <style>
   :root{ --fg:#1a1a1a; --muted:#666; --accent:#7a3ea6; --line:#e6e6e6; --bg:#fff; }
   *{box-sizing:border-box}
@@ -19,7 +19,7 @@
   a:hover{text-decoration:underline}
   .links{font-size:15px;margin-bottom:8px}
   .links a{margin-right:14px;white-space:nowrap}
-  h2{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  h2{font-size:15px;letter-spacing:0;text-transform:uppercase;color:var(--muted);
     margin:38px 0 12px;border-bottom:1px solid var(--line);padding-bottom:6px}
   p{margin:0 0 14px}
   ul{margin:0 0 14px;padding-left:20px}
@@ -47,45 +47,56 @@
   </div>
 
   <h2>About</h2>
-  <p>I am a master's student at UCAS (2024–2027), advised by Prof. Xiangsheng Huang. My research focuses on <strong>VLA post-training and representation stability</strong>, cross-task generalization, and real-robot learning.</p>
+  <p>I am a master's student at the University of Chinese Academy of Sciences, advised by Prof. Xiangsheng Huang, and expect to graduate in June 2027. I am interested in how multimodal models learn representations, adapt to new tasks, and use experience to reason and act.</p>
+  <p>My recent work, FiberTune, studies how to preserve transferable visual structure during vision-language-action (VLA) fine-tuning. I also build robot systems and contribute to open-source software.</p>
 
   <h2>Research Interests</h2>
   <ul>
-    <li>VLA post-training and representation stability</li>
-    <li>Cross-task generalization and real-robot learning</li>
-    <li>WAM and deployment-aware model adaptation</li>
+    <li>Multimodal representation learning and reasoning</li>
+    <li>Continual learning and adaptation</li>
+    <li>World modeling and embodied intelligence</li>
   </ul>
 
   <h2>Publications</h2>
   <div class="pub">
     <div class="title">FiberTune: Preserving Action-Fiber Visual Residuals in Vision-Language-Action Fine-Tuning</div>
-    <div class="meta">Haihao Lin (first &amp; corresponding author). Accepted at CoRL 2026.
+    <div class="meta">Haihao Lin, Xiangsheng Huang, Xiao Yang, Weibang Zhou, Yiqi Zhang, Bo Yang, Simin Zeng, Jiawei Yang, Zhengyang Wang, Jiahui Du.</div>
+    <div class="meta">Accepted at CoRL 2026. First and corresponding author.
       &nbsp;[<a href="https://arxiv.org/abs/2606.08653">arXiv</a>]
       &nbsp;[<a href="https://arxiv.org/pdf/2606.08653">PDF</a>]
-      &nbsp;[<a href="https://fibertune.github.io/">Project</a>]</div>
-    <div class="res">FiberTune preserves transferable visual structure during VLA fine-tuning without adding inference-time overhead. It improves over task-loss-only fine-tuning across six matched CALVIN / LIBERO settings and on physical SO-101, where task success increased from 72.7% to 78.1%.</div>
+      &nbsp;[<a href="https://fibertune.github.io/">Project</a>]
+      &nbsp;[<a href="https://github.com/fibertune/FiberTune">Code</a>]</div>
+    <div class="res">FiberTune preserves visual structure beyond what is needed to fit demonstrated actions, without adding inference-time overhead. Evaluation covers CALVIN, LIBERO, and a real-world SO-101 task. It improves CALVIN ABC→D five-step success from 61.4% to 72.1% and SO-101 task success from 72.7% to 78.1% over task-loss-only fine-tuning.</div>
   </div>
 
-  <h2>Research &amp; Systems</h2>
+  <h2>Honors and Awards</h2>
   <ul>
-    <li>Current experiments span VLA and WAM, using FastWAM and related models to study cross-task generalization and real-robot learning.</li>
-    <li>Designed and implemented autonomous docking for charging, cliff detection and avoidance, and a corresponding docking simulation system for a commercial cleaning robot, followed by ROS2 deployment and system-level closed-loop validation.</li>
+    <li>National Scholarship (twice); Jiangsu University President's Medal; Outstanding Undergraduate Thesis.</li>
+    <li>Three silver medals at ICPC Asia Regional Contests; highest-ranked bronze-medal team at the 2024 ICPC Asia-East Continent Final.</li>
+    <li>Two First Prize awards at the Lanqiao Cup National Finals, in C/C++ and Python (Python: 1st in Jiangsu, 9th nationally).</li>
   </ul>
 
-  <h2>Open Source</h2>
+  <h2>Engineering Projects</h2>
+  <ul>
+    <li><strong>Commercial cleaning robot.</strong> Developed ROS2 systems for autonomous charging-dock return and docking, cliff detection and avoidance, and simulation-based testing before deployment. Also worked on coverage-path planning and speech interaction.</li>
+    <li><strong>RGB-D grasping for logistics.</strong> Built an xArm-based tabletop grasping prototype on Jetson, including hand-eye calibration, suction and gripper integration, and Web API integration.</li>
+  </ul>
+
+  <h2>Open-Source Contributions</h2>
   <p>I was an early key contributor to
     <a href="https://github.com/MaaAssistantArknights/MaaAssistantArknights">MaaAssistantArknights</a>
-    (20k+ GitHub stars), where I developed C++ core modules, WPF GUI features, and a task-planning algorithm for mutual-exclusion constraints.
-    I also contributed to <a href="https://github.com/Ice9Coffee/HoshinoBot">HoshinoBot</a>.</p>
+    (20k+ GitHub stars), where I developed C++ core modules, WPF GUI features, and a task-planning algorithm for mutual-exclusion constraints.</p>
+  <p>In the <a href="https://github.com/Ice9Coffee/HoshinoBot">HoshinoBot</a> ecosystem, I developed and maintained aichat and other plugins. These integrate models through OpenAI-compatible APIs and support multi-turn context, per-group configuration, persistent sessions, model switching, and voice replies. I also built non-invasive message-trigger conflict detection tools to reduce unintended plugin responses.</p>
   <p class="small"><strong>GitHub:</strong> <a href="https://github.com/lhhxxxxx">@lhhxxxxx</a></p>
 
-  <h2>Honors and Competitions</h2>
-  <p>National Scholarship (twice); three silver medals at ICPC Asia Regional Contests; two First Prize awards at the Lanqiao Cup National Finals.</p>
+  <h2>Teaching and Leadership</h2>
+  <p>As captain of Jiangsu University's programming contest team, I helped establish its training and selection system. I independently set and reviewed all warm-up and main-contest problems and wrote their editorials for the 2022 and 2023 university contests, and also served as an on-site proctor and answered contestants' questions.</p>
+  <p>For Lanqiao Cloud Courses, I independently developed the Python preparation course for the 17th Lanqiao Cup, including its curriculum and algorithm content, and contributed problems to the online judge problem bank.</p>
 
   <h2>Education</h2>
   <ul>
-    <li><strong>M.S.</strong>, Computer Science (AI), University of Chinese Academy of Sciences, 2024–2027 (expected).</li>
-    <li><strong>B.E.</strong>, Computer Science &amp; Technology, Jiangsu University, 2020–2024 (GPA rank: 1/171).</li>
+    <li><strong>M.S.</strong>, Computer Science (Artificial Intelligence), University of Chinese Academy of Sciences, Sep. 2024–Jun. 2027 (expected).</li>
+    <li><strong>B.E.</strong>, Computer Science and Technology, Jiangsu University, Sep. 2020–Jun. 2024 (GPA rank: 1/171).</li>
   </ul>
 
   <footer>© Haihao Lin. Built with plain HTML on GitHub Pages. Updated September 2026.</footer>
